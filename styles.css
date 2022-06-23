@@ -1,3 +1,7 @@
+.nav-pl-header {
+  position: relative;
+}
+
 .nav-pl {
   height: 60px;
   background: #ffffff;
@@ -17,6 +21,10 @@
   height: inherit;
 }
 
+.nav-pl_logo-wrapper {
+  display: flex;
+}
+
 .nav-pl__logo {
   width: 115px;
   height: 30px;
@@ -25,7 +33,7 @@
 @media screen and (min-width: 1024px) {
   .nav-pl__logo {
     width: 173px;
-    height: 35px;
+    height: 45px;
   }
 }
 
