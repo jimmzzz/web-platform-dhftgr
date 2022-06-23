@@ -4,16 +4,979 @@
     <title>Other page</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+      
+.nav-pl-header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-pl-header {
+    margin-bottom: 60px;
+  }
+}
+
+.nav-pl {
+  height: 60px;
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-pl {
+    height: 80px;
+  }
+}
+
+.nav-pl__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+.nav-pl_logo-wrapper {
+  display: flex;
+}
+
+.nav-pl__logo {
+  width: 115px;
+  height: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-pl__logo {
+    width: 173px;
+    height: 45px;
+  }
+}
+
+.nav-pl__orders-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-pl__orders-link {
+    flex-direction: column;
+  }
+}
+
+.nav-pl__orders-text {
+  display: flex;
+  color: #3d4951;
+  font-family: VAGRoundedLTPro, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+      .hlavicka {
+        width: 100%;
+        max-width: 700px;
+        margin: 0px auto;
+        position: relative;
+        background-image: url('/i/84368256');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: auto 370px;
+        height: 300px;
+      }
+
+      .hlavicka h1 {
+        font-size: 48px;
+        line-height: 1.2em;
+        color: #3d4951;
+        margin-bottom: 30px;
+        margin-top: 0px;
+        text-align: center;
+      }
+
+      .hlavicka h1 span {
+        color: #cc0000;
+      }
+
+      .hlavicka h1 img {
+        width: auto;
+        height: 48px;
+        position: relative;
+        bottom: -10px;
+        display: inline;
+      }
+
+      .hlavicka .podnadpis {
+        font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+          sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 1.3em;
+        color: #3d4951;
+        margin: 0px auto;
+        text-align: center;
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .hlavicka .tlacitka {
+        position: relative;
+        bottom: -20px;
+        width: 100%;
+        max-width: 440px;
+        margin: 0px auto;
+        text-align: center;
+      }
+
+      .hlavicka .tlacitka a {
+        color: #ffffff;
+        font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+          sans-serif;
+        font-weight: bold;
+        padding: 19px 30px;
+        border-radius: 4px;
+        text-decoration: none;
+        margin-left: 15px;
+        margin-right: 15px;
+        display: block;
+        width: 190px;
+        float: left;
+      }
+
+      .hlavicka .tlacitka a.mall {
+        background-color: #cc0000;
+      }
+
+      .hlavicka .tlacitka a.mall:hover {
+        background-color: #a90000;
+      }
+
+      .hlavicka .tlacitka a.allegro {
+        background-color: #ff5a00;
+        background-image: url('https://i.cdn.nrholding.net/document/84637678');
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 0px;
+        display: inline-block;
+      }
+
+      .hlavicka .tlacitka a.allegro img {
+        display: block;
+        margin: 0px auto;
+      }
+
+      .hlavicka .tlacitka a.allegro:hover img {
+        visibility: hidden;
+      }
+
+      .hlavicka .konfety {
+        width: auto;
+        height: 300px;
+        position: absolute;
+        left: -225px;
+        bottom: -75px;
+      }
+
+      .hlavicka .slon {
+        width: auto;
+        height: 300px;
+        position: absolute;
+        left: -210px;
+        bottom: -55px;
+      }
+
+      .hlavicka .auto {
+        width: auto;
+        height: 230px;
+        position: absolute;
+        right: -200px;
+        bottom: 15px;
+      }
+
+      .pomocnici {
+        width: 100%;
+        max-width: 800px;
+        margin: 100px auto 50px auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .pomocnici .boxik {
+        width: 45%;
+      }
+
+      .pomocnici .boxik img {
+        width: auto;
+        height: 50px;
+        margin: 0px auto;
+        display: block;
+      }
+
+      .pomocnici .boxik h2 {
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.3em;
+      }
+
+      .pomocnici .boxik p {
+        text-align: center;
+      }
+
+      .pomocnici .boxik a {
+        color: #0f73ee;
+        text-decoration: none;
+        font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+          sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 1.3em;
+        text-align: center;
+      }
+
+      .pomocnici .boxik a:hover {
+        text-decoration: underline;
+      }
+
+      .pomocnici .boxik a img {
+        width: auto;
+        height: 18px;
+        display: inline;
+        margin-bottom: -2px;
+      }
+
+      .faq {
+        width: 100%;
+        max-width: 800px;
+        margin: 0px auto;
+        background-image: url('/i/84368264');
+        background-repeat: no-repeat;
+        background-size: auto 230px;
+        background-position: top center;
+        padding-top: 60px;
+      }
+
+      .faq h2 {
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.3em;
+      }
+
+      .faq ol {
+        width: 100%;
+        max-width: 700px;
+        margin: 0px auto;
+      }
+
+      .faq ol li {
+        font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+          sans-serif;
+        font-weight: normal;
+        color: #3d4951;
+      }
+
+      .faq ol li:before {
+        color: #3d4951;
+      }
+
+      .faq ol li p.otazka {
+        padding-right: 30px;
+        background-image: url('/i/84368265');
+        background-repeat: no-repeat;
+        background-size: auto 10px;
+        background-position: top 10px right;
+        cursor: Pointer;
+        margin-bottom: 5px;
+      }
+
+      .faq ol li.rozbaleno p.otazka {
+        background-image: url('/i/84368266');
+      }
+
+      .faq ol li p.odpoved {
+        display: none;
+      }
+
+      .faq ol li.rozbaleno p.odpoved {
+        display: block;
+      }
+
+      .slogan {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+      }
+
+      .slogan img {
+        width: auto;
+        height: 40px;
+        margin-bottom: 15px;
+      }
+
+      .slogan p {
+        font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+          sans-serif;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 1.3em;
+        width: 100%;
+        text-align: center;
+      }
+
+      .uspicka {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 80px;
+      }
+
+      .uspicka .uspicko {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 30px rgba(255, 90, 0, 0.1);
+        padding-top: 50px;
+      }
+
+      .uspicka .uspicko img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .uspicka .uspicko.prvni img {
+        width: auto;
+        height: 82px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .uspicka .uspicko.druhy img {
+        width: auto;
+        height: 94px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+      }
+
+      .uspicka .uspicko.treti img {
+        width: auto;
+        height: 60px;
+        margin-top: 21px;
+        margin-bottom: 21px;
+      }
+
+      .uspicka .uspicko.ctvrty img {
+        width: auto;
+        height: 90px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+      }
+
+      .uspicka .uspicko h2 {
+        font-size: 32px;
+        line-height: 1.2em;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        color: #ff5a00;
+        width: 100%;
+        text-align: center;
+      }
+
+      .uspicka .uspicko p {
+        font-size: 24px;
+        line-height: 1.2em;
+        color: #a0a0a0;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+        font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+          sans-serif;
+        font-weight: bold;
+      }
+
+      .vyzkousejte {
+        text-align: center;
+        margin-bottom: 100px;
+      }
+
+      .vyzkousejte a {
+        font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+          sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 1.2em;
+        border-radius: 4px;
+        background-color: #ff5a00;
+        background-image: url('https://i.cdn.nrholding.net/document/84637678');
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: inline-block;
+      }
+
+      .vyzkousejte a img {
+        display: block;
+        margin: 0px auto;
+        height: auto;
+        width: 400px;
+      }
+
+      .vyzkousejte a:hover img {
+        visibility: hidden;
+      }
+
+      .gdprVeci {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0px auto;
+        border-top: 1px solid #f0f0f0;
+        border-bottom: 1px solid #f0f0f0;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: center;
+      }
+
+      .gdprVeci h2 {
+        margin-top: 0px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        line-height: 1.2em;
+      }
+
+      .gdprVeci .emailik {
+        margin: 0px;
+      }
+
+      .gdprVeci .emailik img {
+        width: auto;
+        height: 17px;
+        margin-right: 5px;
+        margin-bottom: -3px;
+      }
+
+      .gdprVeci .emailik a {
+        color: #0f73ee;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 1.2em;
+      }
+
+      .gdprVeci .emailik a:hover {
+        text-decoration: underline;
+      }
+
+      .legalVeci {
+        color: #a0a0a0;
+        font-size: 13px;
+        line-height: 1.3em;
+        text-align: center;
+        width: 100%;
+        max-width: 550px;
+        margin: 30px auto 0px auto;
+      }
+
+      @media screen and (max-width: 1279px) {
+        .uspicka .uspicko {
+          width: 220px;
+          height: 220px;
+          padding-top: 35px;
+        }
+        .uspicka .uspicko.prvni img {
+          height: 62px;
+        }
+        .uspicka .uspicko.druhy img {
+          height: 74px;
+        }
+        .uspicka .uspicko.treti img {
+          height: 40px;
+        }
+        .uspicka .uspicko.ctvrty img {
+          height: 70px;
+        }
+        .uspicka .uspicko h2 {
+          font-size: 24px;
+        }
+        .uspicka .uspicko p {
+          font-size: 20px;
+        }
+      }
+
+      @media screen and (max-width: 1000px) {
+        .hlavicka {
+          max-width: 550px;
+        }
+        .hlavicka h1 {
+          font-size: 34px;
+        }
+        .hlavicka h1 img {
+          height: 34px;
+          bottom: -8px;
+        }
+        .hlavicka .podnadpis {
+          font-size: 18px;
+          max-width: 400px;
+        }
+        .hlavicka .konfety {
+          height: 250px;
+          left: -185px;
+          bottom: -40px;
+        }
+        .hlavicka .slon {
+          height: 250px;
+          left: -150px;
+          bottom: -15px;
+        }
+        .hlavicka .auto {
+          height: 190px;
+          right: -160px;
+          bottom: 70px;
+        }
+        .pomocnici {
+          margin-top: 50px;
+        }
+        .pomocnici .boxik h2 {
+          font-size: 20px;
+        }
+        .pomocnici .boxik a {
+          font-size: 20px;
+        }
+        .uspicka .uspicko {
+          width: 175px;
+          height: 175px;
+        }
+        .uspicka .uspicko.prvni img {
+          height: 42px;
+        }
+        .uspicka .uspicko.druhy img {
+          height: 54px;
+        }
+        .uspicka .uspicko.treti img {
+          height: 30px;
+          margin-top: 16px;
+          margin-bottom: 16px;
+        }
+        .uspicka .uspicko.ctvrty img {
+          height: 50px;
+        }
+        .uspicka .uspicko h2 {
+          font-size: 18px;
+        }
+        .uspicka .uspicko p {
+          font-size: 16px;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        .hlavicka {
+          background-size: auto 300px;
+          background-position: top -110px center;
+          height: auto;
+          max-width: 500px;
+        }
+        .hlavicka h1 img {
+          height: 30px;
+          bottom: -7px;
+        }
+        .hlavicka h1 {
+          margin-bottom: 170px;
+          font-size: 30px;
+        }
+        .hlavicka .slon {
+          height: 150px;
+          bottom: auto;
+          top: 115px;
+          left: calc(50% - 140px);
+        }
+        .hlavicka .konfety {
+          height: 150px;
+          bottom: auto;
+          top: 130px;
+          left: calc(50% - 150px);
+        }
+        .hlavicka .auto {
+          height: 130px;
+          bottom: auto;
+          top: 125px;
+          left: calc(50%);
+        }
+        .hlavicka .tlacitka {
+          bottom: -15px;
+        }
+        .pomocnici {
+          margin-top: 100px;
+          margin-bottom: 20px;
+        }
+        .pomocnici .boxik h2 {
+          font-size: 18px;
+        }
+        .pomocnici .boxik a {
+          font-size: 18px;
+        }
+        .faq {
+          padding-top: 30px;
+        }
+        .slogan {
+          margin-top: 50px;
+        }
+        .slogan p {
+          font-size: 18px;
+        }
+        .uspicka {
+          flex-wrap: wrap;
+          width: 100%;
+          max-width: 400px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .uspicka .uspicko.treti,
+        .uspicka .uspicko.ctvrty {
+          margin-top: 40px;
+        }
+        .pomocnici {
+          max-width: 600px;
+        }
+        .faq ol {
+          max-width: 500px;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .hlavicka h1 {
+          font-size: 24px;
+        }
+        .hlavicka h1 img {
+          height: 25px;
+          bottom: -6px;
+        }
+        .hlavicka .tlacitka {
+          bottom: -20px;
+        }
+        .hlavicka .tlacitka a {
+          width: 100%;
+          margin-left: 0px;
+          margin-right: 0px;
+          display: block;
+          padding: 10px 0px;
+        }
+        .hlavicka .tlacitka a.mall {
+          margin-bottom: 20px;
+        }
+        .pomocnici {
+          flex-wrap: wrap;
+          margin-top: 240px;
+        }
+        .pomocnici .boxik {
+          width: 100%;
+        }
+        .pomocnici .boxik:nth-child(1) {
+          margin-bottom: 20px;
+        }
+        .uspicka {
+          justify-content: center;
+          margin-bottom: 50px;
+        }
+        .uspicka .uspicko {
+          width: 240px;
+          height: 240px;
+          margin-bottom: 40px;
+          padding-top: 50px;
+        }
+        .uspicka .uspicko.prvni img {
+          height: 62px;
+        }
+        .uspicka .uspicko.druhy img {
+          height: 74px;
+        }
+        .uspicka .uspicko.treti img {
+          height: 40px;
+          margin-top: 21px;
+          margin-bottom: 21px;
+        }
+        .uspicka .uspicko.ctvrty img {
+          height: 70px;
+        }
+        .uspicka .uspicko h2 {
+          font-size: 22px;
+        }
+        .uspicka .uspicko p {
+          font-size: 18px;
+        }
+        .uspicka .uspicko.treti,
+        .uspicka .uspicko.ctvrty {
+          margin-top: 0px;
+        }
+        .uspicka .uspicko.ctvrty {
+          margin-bottom: 0px;
+        }
+        .vyzkousejte a {
+          display: block;
+          width: 100%;
+          padding: 10px 0px;
+        }
+        .vyzkousejte {
+          margin-bottom: 40px;
+        }
+        .vyzkousejte a img {
+          height: auto;
+          width: 100%;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://www.mall.pl/static/layout/build/PL20MA/css/main.min.css?rel=fe5196ab967d"
+    />
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/page2.html" aria-current="page">Other page</a>
-    </nav>
-    <main>
-      <h1>My other page</h1>
-    </main>
+    <header id="header" role="navigation" class="nav-pl-header">
+      <div class="nav-pl">
+        <div class="head-container nav-pl__container">
+          <div class="nav-pl_logo-wrapper">
+            <svg
+              class="nav-pl__logo"
+              viewBox="0 0 173 45"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="173" height="45" fill="url(#paint0_linear_262_714)" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M52.6154 13.2308L52.662 13.1043C53.854 9.86723 54.9098 7 58.3269 7C61.7885 7 62.8269 9.76923 64.0385 13.2308L70.6154 30.7115C71.4808 33.1346 71.6538 33.8269 71.6538 34.8654C71.6538 36.5962 70.2692 37.6346 68.3654 37.6346C66.1154 37.6346 65.4231 36.25 64.7308 34.3462L63.8654 31.75H52.7885L51.9231 34.5192C51.2308 36.4231 50.5385 37.8077 48.2885 37.8077C46.3846 37.8077 45 36.7692 45 35.0385C45 34 45.1731 33.3077 46.0385 30.8846L52.6154 13.2308ZM12.8077 11.6731C13.5 8.21154 15.5769 7.34615 17.3077 7.34615C20.7692 7.34615 21.4615 9.25 23.1923 14.6154L26.4808 24.8269L29.7692 14.6154C31.5 9.25 32.1923 7.34615 35.6538 7.34615C37.3846 7.34615 39.4615 8.03846 40.1538 11.6731L42.75 27.0769C42.9197 28.0953 43.1079 29.1506 43.2844 30.1401C43.6479 32.1779 43.9615 33.9367 43.9615 34.5192C43.9615 36.0769 42.75 37.8077 40.8462 37.8077C37.7308 37.8077 37.2115 35.5577 36.8654 33.3077L34.7885 20.1538L30.2885 34.8654C29.5962 37.1154 28.5577 37.9808 26.4808 37.9808C24.4038 37.9808 23.3654 37.1154 22.6731 34.8654L18.1731 20.1538L16.0962 33.3077C15.75 35.5577 15.2308 37.8077 12.1154 37.8077C10.0385 37.8077 9 36.0769 9 34.5192C9 33.4808 9.51923 30.1923 10.2115 27.0769L12.8077 11.6731ZM54.6923 25.5192L58.5 14.6154L61.9615 25.5192H54.6923ZM73.2115 10.9808C73.2115 8.55769 74.5962 7.34615 76.6731 7.34615C78.5769 7.34615 80.1346 8.55769 80.1346 10.9808V31.2308H87.4038C89.4808 31.2308 90.8654 32.4423 90.8654 34.3462C90.8654 36.25 89.6538 37.4615 87.4038 37.4615H76.6731C74.9423 37.4615 73.2115 36.25 73.2115 34V10.9808ZM95.3654 7.34615C93.2885 7.34615 91.9038 8.55769 91.9038 10.9808V34C91.9038 36.25 93.6346 37.4615 95.3654 37.4615H106.096C108.346 37.4615 109.558 36.25 109.558 34.3462C109.558 32.4423 108.173 31.2308 106.096 31.2308H98.8269V10.9808C98.8269 8.55769 97.2692 7.34615 95.3654 7.34615ZM115.442 30.8846C117.346 30.8846 119.077 32.6154 119.077 34.5192C119.077 36.5962 117.346 38.1538 115.442 38.1538C113.538 38.1538 111.808 36.5962 111.808 34.5192C111.808 32.6154 113.365 30.8846 115.442 30.8846ZM125.135 7.34615C123.404 7.34615 121.673 8.55769 121.673 10.8077V34.1731C121.673 36.5962 123.058 37.8077 125.135 37.8077C127.212 37.8077 128.596 36.5962 128.596 34.1731V27.7692H133.788C140.365 27.7692 144 23.4423 144 17.5577C144 10.8077 138.981 7.34615 133.615 7.34615H125.135ZM128.596 21.7115H132.231C135.173 21.7115 136.731 19.6346 136.731 17.5577C136.731 14.7885 134.827 13.4038 132.231 13.4038H128.596V21.7115ZM149.192 7C147.115 7 145.731 8.21154 145.731 10.6346V33.8269C145.731 36.0769 147.462 37.2885 149.192 37.2885H160.096C162.346 37.2885 163.558 36.0769 163.558 34.1731C163.558 32.2692 162.346 31.0577 160.096 31.0577H152.654V10.6346C152.654 8.21154 151.269 7 149.192 7Z"
+                fill="white"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_262_714"
+                  x1="44.3313"
+                  y1="-2.51486e-07"
+                  x2="125.425"
+                  y2="45.4125"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#CC0000" />
+                  <stop offset="1" stop-color="#FF5A00" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="nav-pl__orders">
+          <a href="klient/orders" class="nav-pl__orders-link" >
+          <svg
+            width="23"
+            height="24"
+            viewBox="0 0 23 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.2002 0C14.5139 0 17.2002 2.68629 17.2002 6C17.2002 9.31371 14.5139 12 11.2002 12C7.88651 12 5.20022 9.31371 5.20022 6C5.20022 2.68629 7.88651 0 11.2002 0ZM11.2002 2C8.99105 2 7.20019 3.79086 7.20019 6C7.20019 8.20914 8.99105 10 11.2002 10C13.4093 10 15.2002 8.20914 15.2002 6C15.2002 3.79086 13.4093 2 11.2002 2Z"
+              fill="#FF5A00"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.200195 24C0.200195 17.9249 5.12506 13 11.2002 13C17.2753 13 22.2002 17.9249 22.2002 24H0.200195ZM11.2002 15C6.91702 15 3.33265 17.9921 2.42322 22.0001H19.9772C19.0678 17.9921 15.4834 15 11.2002 15Z"
+              fill="#FF5A00"
+            />
+          </svg>
+          <span class="nav-pl__orders-text">My orders</p>
+          </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+    <div class="hlavicka">
+      <h1>
+        <span>MALL.PL</span><br />stał się częścią<br />rodziny
+        <img src="/i/84368260" />
+      </h1>
+      <p class="podnadpis">
+        Od 1 lipca kończymy sprzedaż w sklepie MALL.PL. Zapraszamy na Allegro,
+        gdzie kupisz wszystko w jednym miejscu.
+      </p>
+      <p class="tlacitka">
+        <a href="https://www.mall.pl" class="mall">Przejdź na MALL.PL</a>
+        <a
+          href="https://allegro.pl"
+          target="_blank"
+          rel="noopener"
+          class="allegro"
+          ><img src="https://i.cdn.nrholding.net/document/84637677"
+        /></a>
+      </p>
+      <img src="/i/84368258" class="konfety" />
+      <img src="/i/84368259" class="slon" />
+      <img src="/i/84630687" class="auto" />
+    </div>
+
+    <div class="pomocnici">
+      <div class="boxik">
+        <img src="/i/84368261" />
+        <h2>
+          Złożyłeś zamówienie w&nbsp;czerwcu?<br />Dostarczymy je bez zakłóceń
+        </h2>
+        <p>
+          <a href="/sledzenie-zamowienia"
+            >Sprawdź status zamówienia <img src="/i/84368263"
+          /></a>
+        </p>
+      </div>
+
+      <div class="boxik">
+        <img src="/i/84368262" />
+        <h2>Potrzebujesz pomocy w sprawie reklamacji, zwrotu lub innej?</h2>
+        <p>
+          <a href="/kontakt">Centrum kontaktu <img src="/i/84368263" /></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h2>FAQs</h2>
+      <ol>
+        <li>
+          <p class="otazka">
+            Co z moimi obecnymi zamówieniami? Czy zostaną dostarczone?
+          </p>
+          <p class="odpoved">
+            Nie martw się. Wszystkie zamówienia zostaną zrealizowane. O etapach
+            realizacji zamówienia będziemy informować w wiadomościach e-mail.
+          </p>
+        </li>
+        <li>
+          <p class="otazka">
+            Co z przyszłymi zamówieniami, czy nadal mogę je złożyć?
+          </p>
+          <p class="odpoved">
+            Zakupu na Mall.pl możesz dokonać do 30 czerwca 2022 roku.
+          </p>
+        </li>
+        <li>
+          <p class="otazka">
+            A co z podstawowymi funkcjonalnościami związanymi z zamówieniami?
+            Śledzenie przesyłki, obsługa klienta?
+          </p>
+          <p class="odpoved">
+            Wszystkie funkcjonalności zostaną zachowane na czas procesowania
+            zamówień. W każdej chwili możesz się z nami skontaktować pod adresem
+            info@mall.pl.
+          </p>
+        </li>
+        <li>
+          <p class="otazka">
+            Co z moją historią zakupów? Dane osobowe? Czy zostaną one
+            przeniesione do Allegro? Jeśli nie, co się z nimi stanie?
+          </p>
+          <p class="odpoved">
+            Twoje Centrum Klienta, wraz z historią zamówień, będzie nadal
+            dostępne. Haslo i login pozostają bez zmian. Jeśli nie masz
+            założonego konta w Centrum Klienta nadal możesz uzyskać informacje o
+            swoich danych osobowych, kontaktując się z nami na info@mall.pl.
+          </p>
+        </li>
+        <li>
+          <p class="otazka">
+            Co z moimi skargami? Czy zostaną rozwiązane? A co jeśli chcę złożyć
+            reklamację w przyszłości?
+          </p>
+          <p class="odpoved">
+            Wszystkie zgłoszenia będą procesowane bez zmian. W razie pytań lub
+            reklamacji prosimy o kontakt pod adresem reklamacje@mall.pl.
+          </p>
+        </li>
+        <li>
+          <p class="otazka">
+            Jak będę mógł zwrócić towar w ciągu 14 dni? Czy proces zwrotu
+            pozostanie taki sam?
+          </p>
+          <p class="odpoved">
+            Proces zwrotu pozostaje taki sam. Zgodnie z polskim prawem jako
+            kupujący-konsument masz możliwość zwrotu towaru zakupionego na
+            odległość w ciągu 14 dni od daty otrzymania przesyłki. W tym celu
+            prosimy o wysłanie e-maila na: reklamacje@mall.pl z informacją o
+            odstąpieniu od umowy sprzedaży.
+          </p>
+        </li>
+        <li>
+          <p class="otazka">
+            Czy będę mógł się z Wami skontaktować po przeniesieniu MALL do
+            Allegro?
+          </p>
+          <p class="odpoved">
+            W dalszym ciągu będziemy obsługiwać naszych Klientów. Możesz napisać
+            do nas na adres info@mall.pl lub reklamacje@mall.pl.
+          </p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="slogan">
+      <img src="/i/84368260" />
+      <p>wszystko czego potrzebujesz, w&nbsp;jednym miejscu!</p>
+    </div>
+
+    <div class="uspicka">
+      <div class="uspicko prvni">
+        <img src="https://i.cdn.nrholding.net/document/84368271" />
+        <h2>130 milionów</h2>
+        <p>ofert</p>
+      </div>
+
+      <div class="uspicko druhy">
+        <img src="https://i.cdn.nrholding.net/document/84368270" />
+        <h2>atrakcyjne ceny</h2>
+        <p>i okazje</p>
+      </div>
+
+      <div class="uspicko treti">
+        <img src="https://i.cdn.nrholding.net/document/84368269" />
+        <h2>wygodne dostawy</h2>
+        <p>i punkty odbioru</p>
+      </div>
+
+      <div class="uspicko ctvrty">
+        <img src="https://i.cdn.nrholding.net/document/84368272" />
+        <h2>bezpłatne przesyłki</h2>
+        <p>i zwroty</p>
+      </div>
+    </div>
+
+    <div class="vyzkousejte">
+      <a href="https://allegro.pl" target="_blank" rel="noopener"
+        ><img src="https://i.cdn.nrholding.net/document/84637677"
+      /></a>
+    </div>
+
+    <div class="gdprVeci">
+      <h2>Masz inne pytania? Napisz do nas:</h2>
+      <p class="emailik">
+        <img src="https://i.cdn.nrholding.net/document/84368837" /><a
+          href="mailto:info@mall.pl"
+          >info@mall.pl</a
+        >
+      </p>
+    </div>
+
+    <div class="legalVeci">
+      <p>
+        Nazwa administratora oraz zasady ochrony i przetwarzania Twoich danych
+        osobowych nie ulegną zmianie. W dalszym ciągu umożliwimy spełnienie
+        wszystkich praw wynikających z RODO tj. prawo dostępu, sprostowania oraz
+        usunięcia danych, ograniczenia ich przetwarzania, prawo do ich
+        przenoszenia, niepodlegania zautomatyzowanemu podejmowaniu decyzji, w
+        tym profilowaniu, a także prawo do wyrażenia sprzeciwu wobec
+        przetwarzania danych osobowych. Możesz napisać do nas na adres
+        info@mall.pl.
+      </p>
+    </div>
+    </div>
   </body>
 </html>
