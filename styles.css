@@ -14,3 +14,17 @@
 
 .nav-pl__orders {
 }
+
+.nav-pl__orders-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.nav-pl__orders-text {
+  display: flex;
+  color: #3d4951;
+  font-family: VAGRoundedLTPro, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
