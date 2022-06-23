@@ -1,0 +1,16 @@
+.nav-pl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-pl__logo {
+  width: 115px;
+  height: 30px;
+}
+
+.nav-pl__orders {
+}
