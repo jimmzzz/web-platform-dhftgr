@@ -1,10 +1,20 @@
 .nav-pl {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 60px;
   background: #ffffff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-pl {
+    height: 80px;
+  }
+}
+
+.nav-pl__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
 }
 
 .nav-pl__logo {
@@ -12,7 +22,11 @@
   height: 30px;
 }
 
-.nav-pl__orders {
+@media screen and (min-width: 1024px) {
+  .nav-pl__logo {
+    width: 173px;
+    height: 35px;
+  }
 }
 
 .nav-pl__orders-link {
@@ -22,9 +36,16 @@
   text-decoration: none;
 }
 
+@media screen and (min-width: 1024px) {
+  .nav-pl__orders-link {
+    flex-direction: column;
+  }
+}
+
 .nav-pl__orders-text {
   display: flex;
   color: #3d4951;
   font-family: VAGRoundedLTPro, Arial, Helvetica, sans-serif;
   font-weight: bold;
+  font-size: 14px;
 }
