@@ -1,0 +1,744 @@
+.nav-pl-header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-pl-header {
+    margin-bottom: 60px;
+  }
+}
+
+.nav-pl {
+  height: 60px;
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-pl {
+    height: 80px;
+  }
+}
+
+.nav-pl__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+.nav-pl_logo-wrapper {
+  display: flex;
+}
+
+.nav-pl__logo {
+  width: 115px;
+  height: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-pl__logo {
+    width: 173px;
+    height: 45px;
+  }
+}
+
+.nav-pl__orders-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-pl__orders-link {
+    flex-direction: column;
+  }
+}
+
+.nav-pl__orders-text {
+  display: flex;
+  color: #3d4951;
+  font-family: VAGRoundedLTPro, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* BODY */
+
+.container {
+  padding: 15px;
+}
+
+.cta-orange {
+  height: 40px;
+  color: #ff5a00;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+  .cta-orange {
+    height: 64px;
+  }
+}
+
+.hlavicka {
+  width: 100%;
+  max-width: 700px;
+  margin: 0px auto;
+  position: relative;
+  background-image: url('/i/84368256');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto 370px;
+  height: 300px;
+}
+
+.hlavicka h1 {
+  font-size: 48px;
+  line-height: 1.2em;
+  color: #3d4951;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.hlavicka h1 span {
+  color: #cc0000;
+}
+
+.hlavicka h1 img {
+  width: auto;
+  height: 48px;
+  position: relative;
+  bottom: -10px;
+  display: inline;
+}
+
+.hlavicka .podnadpis {
+  font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+    sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.3em;
+  color: #3d4951;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.hlavicka .tlacitka {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -20px;
+  width: 100%;
+  max-width: 440px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.hlavicka .tlacitka a {
+  color: #ffffff;
+  font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+    sans-serif;
+  font-weight: bold;
+  padding: 19px 30px;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: block;
+  width: 190px;
+  float: left;
+}
+
+.hlavicka .tlacitka a.mall {
+  background-color: #cc0000;
+}
+
+.hlavicka .tlacitka a.mall:hover {
+  background-color: #a90000;
+}
+
+.allegro {
+  background-color: #ff5a00;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 0px;
+  height: 40px;
+  display: inline-block;
+  font-family: VAGRoundedLTPro,Arial,Helvetica,sans-serif;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 1024px) {
+  .allegro {
+    height: 64px;
+  }
+}
+
+.hlavicka .tlacitka a.allegro img {
+  display: block;
+  margin: 0px auto;
+}
+
+.hlavicka .tlacitka a.allegro:hover img {
+  visibility: hidden;
+}
+
+.hlavicka .konfety {
+  width: auto;
+  height: 300px;
+  position: absolute;
+  left: -225px;
+  bottom: -75px;
+}
+
+.hlavicka .slon {
+  width: auto;
+  height: 300px;
+  position: absolute;
+  left: -210px;
+  bottom: -55px;
+}
+
+.hlavicka .auto {
+  width: auto;
+  height: 230px;
+  position: absolute;
+  right: -200px;
+  bottom: 15px;
+}
+
+.pomocnici {
+  width: 100%;
+  max-width: 800px;
+  margin: 100px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pomocnici .boxik {
+  width: 45%;
+}
+
+.pomocnici .boxik img {
+  width: auto;
+  height: 50px;
+  margin: 0px auto;
+  display: block;
+}
+
+.pomocnici .boxik h2 {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+.pomocnici .boxik p {
+  text-align: center;
+}
+
+.pomocnici .boxik a {
+  color: #0f73ee;
+  text-decoration: none;
+  font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+    sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.3em;
+  text-align: center;
+}
+
+.pomocnici .boxik a:hover {
+  text-decoration: underline;
+}
+
+.pomocnici .boxik a img {
+  width: auto;
+  height: 18px;
+  display: inline;
+  margin-bottom: -2px;
+}
+
+.faq {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto;
+  background-image: url('/i/84368264');
+  background-repeat: no-repeat;
+  background-size: auto 230px;
+  background-position: top center;
+  padding-top: 60px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.3em;
+}
+
+.faq ol {
+  width: 100%;
+  max-width: 700px;
+  margin: 0px auto;
+}
+
+.faq ol li {
+  font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+    sans-serif;
+  font-weight: normal;
+  color: #3d4951;
+}
+
+.faq ol li:before {
+  color: #3d4951;
+}
+
+.faq ol li p.otazka {
+  padding-right: 30px;
+  background-image: url('/i/84368265');
+  background-repeat: no-repeat;
+  background-size: auto 10px;
+  background-position: top 10px right;
+  cursor: Pointer;
+  margin-bottom: 5px;
+}
+
+.faq ol li.rozbaleno p.otazka {
+  background-image: url('/i/84368266');
+}
+
+.faq ol li p.odpoved {
+  display: none;
+}
+
+.faq ol li.rozbaleno p.odpoved {
+  display: block;
+}
+
+.slogan {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.slogan img {
+  width: auto;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.slogan p {
+  font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+    sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.3em;
+  width: 100%;
+  text-align: center;
+}
+
+.uspicka {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.uspicka .uspicko {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 30px rgba(255, 90, 0, 0.1);
+  padding-top: 50px;
+}
+
+.uspicka .uspicko img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uspicka .uspicko.prvni img {
+  width: auto;
+  height: 82px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.uspicka .uspicko.druhy img {
+  width: auto;
+  height: 94px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.uspicka .uspicko.treti img {
+  width: auto;
+  height: 60px;
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+.uspicka .uspicko.ctvrty img {
+  width: auto;
+  height: 90px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.uspicka .uspicko h2 {
+  font-size: 32px;
+  line-height: 1.2em;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: #ff5a00;
+  width: 100%;
+  text-align: center;
+}
+
+.uspicka .uspicko p {
+  font-size: 24px;
+  line-height: 1.2em;
+  color: #a0a0a0;
+  margin: 0px;
+  width: 100%;
+  text-align: center;
+  font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+    sans-serif;
+  font-weight: bold;
+}
+
+.vyzkousejte {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.vyzkousejte a {
+  font-family: 'TitilliumMimovrste', 'VAGRoundedLTPro', Arial, Helvetica,
+    sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.2em;
+  border-radius: 4px;
+  background-color: #ff5a00;
+  background-image: url('https://i.cdn.nrholding.net/document/84637678');
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.vyzkousejte a img {
+  display: block;
+  margin: 0px auto;
+  height: auto;
+  width: 400px;
+}
+
+.vyzkousejte a:hover img {
+  visibility: hidden;
+}
+
+.gdprVeci {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.gdprVeci h2 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.2em;
+}
+
+.gdprVeci .emailik {
+  margin: 0px;
+}
+
+.gdprVeci .emailik img {
+  width: auto;
+  height: 17px;
+  margin-right: 5px;
+  margin-bottom: -3px;
+}
+
+.gdprVeci .emailik a {
+  color: #0f73ee;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1.2em;
+}
+
+.gdprVeci .emailik a:hover {
+  text-decoration: underline;
+}
+
+.legalVeci {
+  color: #a0a0a0;
+  font-size: 13px;
+  line-height: 1.3em;
+  text-align: center;
+  width: 100%;
+  max-width: 550px;
+  margin: 30px auto 0px auto;
+}
+
+@media screen and (max-width: 1279px) {
+  .uspicka .uspicko {
+    width: 220px;
+    height: 220px;
+    padding-top: 35px;
+  }
+  .uspicka .uspicko.prvni img {
+    height: 62px;
+  }
+  .uspicka .uspicko.druhy img {
+    height: 74px;
+  }
+  .uspicka .uspicko.treti img {
+    height: 40px;
+  }
+  .uspicka .uspicko.ctvrty img {
+    height: 70px;
+  }
+  .uspicka .uspicko h2 {
+    font-size: 24px;
+  }
+  .uspicka .uspicko p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hlavicka {
+    max-width: 550px;
+  }
+  .hlavicka h1 {
+    font-size: 34px;
+  }
+  .hlavicka h1 img {
+    height: 34px;
+    bottom: -8px;
+  }
+  .hlavicka .podnadpis {
+    font-size: 18px;
+    max-width: 400px;
+  }
+  .hlavicka .konfety {
+    height: 250px;
+    left: -185px;
+    bottom: -40px;
+  }
+  .hlavicka .slon {
+    height: 250px;
+    left: -150px;
+    bottom: -15px;
+  }
+  .hlavicka .auto {
+    height: 190px;
+    right: -160px;
+    bottom: 70px;
+  }
+  .pomocnici {
+    margin-top: 50px;
+  }
+  .pomocnici .boxik h2 {
+    font-size: 20px;
+  }
+  .pomocnici .boxik a {
+    font-size: 20px;
+  }
+  .uspicka .uspicko {
+    width: 175px;
+    height: 175px;
+  }
+  .uspicka .uspicko.prvni img {
+    height: 42px;
+  }
+  .uspicka .uspicko.druhy img {
+    height: 54px;
+  }
+  .uspicka .uspicko.treti img {
+    height: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .uspicka .uspicko.ctvrty img {
+    height: 50px;
+  }
+  .uspicka .uspicko h2 {
+    font-size: 18px;
+  }
+  .uspicka .uspicko p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hlavicka {
+    background-size: auto 300px;
+    background-position: top -110px center;
+    height: auto;
+    max-width: 500px;
+  }
+  .hlavicka h1 img {
+    height: 30px;
+    bottom: -7px;
+  }
+  .hlavicka h1 {
+    margin-bottom: 170px;
+    font-size: 30px;
+  }
+  .hlavicka .slon {
+    height: 150px;
+    bottom: auto;
+    top: 115px;
+    left: calc(50% - 140px);
+  }
+  .hlavicka .konfety {
+    height: 150px;
+    bottom: auto;
+    top: 130px;
+    left: calc(50% - 150px);
+  }
+  .hlavicka .auto {
+    height: 130px;
+    bottom: auto;
+    top: 125px;
+    left: calc(50%);
+  }
+  .hlavicka .tlacitka {
+    bottom: -15px;
+  }
+  .pomocnici {
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+  .pomocnici .boxik h2 {
+    font-size: 18px;
+  }
+  .pomocnici .boxik a {
+    font-size: 18px;
+  }
+  .faq {
+    padding-top: 30px;
+  }
+  .slogan {
+    margin-top: 50px;
+  }
+  .slogan p {
+    font-size: 18px;
+  }
+  .uspicka {
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .uspicka .uspicko.treti,
+  .uspicka .uspicko.ctvrty {
+    margin-top: 40px;
+  }
+  .pomocnici {
+    max-width: 600px;
+  }
+  .faq ol {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hlavicka h1 {
+    font-size: 24px;
+  }
+  .hlavicka h1 img {
+    height: 25px;
+    bottom: -6px;
+  }
+  .hlavicka .tlacitka {
+    bottom: -20px;
+  }
+  .hlavicka .tlacitka a {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: block;
+    padding: 10px 0px;
+  }
+  .hlavicka .tlacitka a.mall {
+    margin-bottom: 20px;
+  }
+  .pomocnici {
+    flex-wrap: wrap;
+    margin-top: 240px;
+  }
+  .pomocnici .boxik {
+    width: 100%;
+  }
+  .pomocnici .boxik:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  .uspicka {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .uspicka .uspicko {
+    width: 240px;
+    height: 240px;
+    margin-bottom: 40px;
+    padding-top: 50px;
+  }
+  .uspicka .uspicko.prvni img {
+    height: 62px;
+  }
+  .uspicka .uspicko.druhy img {
+    height: 74px;
+  }
+  .uspicka .uspicko.treti img {
+    height: 40px;
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+  .uspicka .uspicko.ctvrty img {
+    height: 70px;
+  }
+  .uspicka .uspicko h2 {
+    font-size: 22px;
+  }
+  .uspicka .uspicko p {
+    font-size: 18px;
+  }
+  .uspicka .uspicko.treti,
+  .uspicka .uspicko.ctvrty {
+    margin-top: 0px;
+  }
+  .uspicka .uspicko.ctvrty {
+    margin-bottom: 0px;
+  }
+  .vyzkousejte a {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .vyzkousejte {
+    margin-bottom: 40px;
+  }
+  .vyzkousejte a img {
+    height: auto;
+    width: 100%;
+  }
+}
