@@ -92,7 +92,7 @@
   max-width: 700px;
   margin: 0px auto;
   position: relative;
-  background-image: url('/i/84368256');
+  background-image: url('https://www.mall.pl/i/84368256');
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: auto 370px;
@@ -137,7 +137,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: -20px;
+  bottom: -30px;
   width: 100%;
   max-width: 440px;
   margin: 0px auto;
@@ -174,17 +174,26 @@
   }
 }
 
+.cta-bottom {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 1024px) {
   .cta-bottom {
-    margin-top: 65px;
-    margin-bottom: 65px;
     height: auto;
+    background: none;
   }
 }
 
 .allegro__btn-text {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .allegro__btn-text {
+    padding: 0 26px;
+  }
 }
 
 .hlavicka .tlacitka a.allegro img {
@@ -271,6 +280,11 @@
   margin-bottom: -2px;
 }
 
+.cta-bottom .tlacitka {
+  position: static;
+  margin-bottom: 60px;
+}
+
 .faq {
   width: 100%;
   max-width: 800px;
@@ -299,6 +313,16 @@
     sans-serif;
   font-weight: normal;
   color: #3d4951;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .faq ol li {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 
 .faq ol li:before {
@@ -325,6 +349,18 @@
 
 .faq ol li.rozbaleno p.odpoved {
   display: block;
+  background: whitesmoke;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+@media screen and (min-width: 1024px) {
+  .faq__heading {
+    margin-bottom: 40px;
+  }
 }
 
 .slogan {
@@ -400,7 +436,7 @@
 }
 
 .uspicka .uspicko h2 {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1.2em;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -543,6 +579,7 @@
   .hlavicka .podnadpis {
     font-size: 18px;
     max-width: 400px;
+    padding-top: 30px;
   }
   .hlavicka .konfety {
     height: 250px;
@@ -597,7 +634,7 @@
 @media screen and (max-width: 800px) {
   .hlavicka {
     background-size: auto 300px;
-    background-position: top -110px center;
+    background-position: top -70px center;
     height: auto;
     max-width: 500px;
   }
