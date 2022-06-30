@@ -76,14 +76,14 @@
 }
 
 .cta-orange {
-  height: 40px;
+  /* height: 40px; */
   color: #ff5a00;
   text-transform: uppercase;
 }
 
 @media screen and (min-width: 1024px) {
   .cta-orange {
-    height: 64px;
+    /* height: 64px; */
   }
 }
 
@@ -137,7 +137,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: -30px;
+  bottom: -45px;
   width: 100%;
   max-width: 440px;
   margin: 0px auto;
@@ -148,8 +148,8 @@
 .hlavicka .tlacitka a {
   color: #ffffff;
   font-weight: bold;
-  padding: 19px 30px;
-  border-radius: 4px;
+  padding: 0 16px;
+  border-radius: 2px;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -169,7 +169,7 @@
 
 @media screen and (min-width: 1024px) {
   .allegro {
-    height: 64px;
+    /* height: 64px; */
     width: auto;
   }
 }
@@ -185,15 +185,29 @@
   }
 }
 
+.mall-logo {
+  margin-right: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .mall-logo {
+    margin-right: 45px;
+  }
+}
+
 .allegro__btn-text {
   display: flex;
   align-items: center;
   font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: 1024px) {
   .allegro__btn-text {
-    padding: 0 26px;
   }
 }
 
@@ -578,7 +592,7 @@
   .hlavicka .podnadpis {
     font-size: 18px;
     max-width: 400px;
-    padding-top: 30px;
+    padding-top: 10px;
   }
   .hlavicka .konfety {
     height: 250px;
